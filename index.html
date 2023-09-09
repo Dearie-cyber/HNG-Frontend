@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNGx Frontend</title>
+</head>
+<body>
+    <div class="left-col">
+        <img src="slack.png" alt="Eburu Dearie" data-testid="slackDisplayImage">
+    </div>
+
+    <div class="right-col">
+        <h4 data-testid="slackUserName">Eburu Dearie</h4>
+        <h4 data-testid="currentDayOfTheWeek"></h4>
+        <h4 data-testid="currentUTCTime"></h4>
+        <h4 data-testid="myTrack">Frontend</h4>
+        <h4></h4>
+    </div>
+
+
+
+
+
+
+    <script>
+        // const currentDate = new Date();
+        // const dayNames = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday",];
+        // const currentDayIndex = currentDate.getUTCDay();
+        // const currentDayName = dayNames[currentDayIndex];
+        function getCurrentDay() {
+          const currentDate = new Date();
+          const options = { weekday: 'long' }; // 'long' returns the full day name (e.g., "Monday").
+          const currentDay = currentDate.toLocaleDateString('en-US', options);
+          return currentDay;
+           }
+    </script>
+</body>
+</html>
